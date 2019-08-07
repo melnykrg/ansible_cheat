@@ -1,0 +1,180 @@
+---
+chassis:
+- objects:
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '1'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '2'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '3'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '4'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '5'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '6'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '7'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: A
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '8'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '1'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '2'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '3'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '4'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '5'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '6'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '7'
+        slot_id: '1'
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: B
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '8'
+        slot_id: '1'
+

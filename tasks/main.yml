@@ -1,0 +1,23 @@
+---
+- name: Runninj JInja
+  template:
+    src="../CiscoUcs.ucs/equipment/fabric_interconnect_ports/template/template.j2"
+    dest="../CiscoUcs.ucs/equipment/fabric_interconnect_ports/defaults/main.yml"
+
+# tasks file for CiscoUse.ucs/equipment/fabric_interconnect_ports
+- name: UCS Fabric Interconnect Port Configuration
+
+  vars:
+    login_info: &login_info
+      hostname: "{{ ucs_hostname }}"
+      username: "{{ ucs_username }}"
+      password: "{{ ucs_password }}"
+      state: "{{ ucs_state }}"
+
+  block:
+  - name: Configure Fabric Interconnect Ports ("{{chassis_count}}"x Chassis)
+    ucs_managed_objects:
+      <<: *login_info
+      objects: "{{ item.objects }}"
+    # when: item.objects is defined and chassis_count == 2
+    with_items: "{{ chassis }}"

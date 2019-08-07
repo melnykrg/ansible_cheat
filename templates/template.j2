@@ -1,0 +1,18 @@
+---
+chassis:
+- objects:
+{% for fabric in ['A', 'B'] %}
+{% for port in range(1,chassis_count|int+1) %}
+  - module: ucsmsdk.mometa.fabric.FabricDceSwSrv
+    class: FabricDceSwSrv
+    properties:
+      parent_mo_or_dn: fabric/server
+      id: {{ fabric }}
+    children:
+    - module: ucsmsdk.mometa.fabric.FabricDceSwSrvEp
+      class: FabricDceSwSrvEp
+      properties:
+        port_id: '{{ port }}'
+        slot_id: '1'
+{% endfor %}
+{% endfor %}
